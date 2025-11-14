@@ -20,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val toolbar: MaterialToolbar = findViewById(R.id.toolbar)
         val drawerLayout: DrawerLayout = findViewById(R.id.main)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        val header = navView.getHeaderView(0)
         val botonMenu: ImageView = findViewById(R.id.AbrirMenu)
 
         //Poner pantalla default

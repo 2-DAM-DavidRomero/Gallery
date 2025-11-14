@@ -25,8 +25,8 @@ class Home : Fragment() {
         super.onResume()
 
         // Acceder al toolbar de la Activity
-        val toolbar = activity?.findViewById<MaterialToolbar>(R.id.toolbar)
-        val titulo = toolbar?.findViewById<TextView>(R.id.TituloToolBar)
+        val toolbarInclude = activity?.findViewById<View>(R.id.toolbarInclude)
+        val titulo = toolbarInclude?.findViewById<TextView>(R.id.TituloToolBar)
 
         // Cambiar el texto
         titulo?.text = "Home"
